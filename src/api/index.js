@@ -11,6 +11,7 @@ export let reqCategorys = () => ajax(base+"/index_category")
 export let reqShops = ({latitude,longitude}) => ajax(base+"/shops",{
   params:{
     latitude,
-    longitude
+    longitude,
+
   }
 })

@@ -20,3 +20,4 @@ axios.interceptors.response.use(response =>{
   alert(error.message)
   return new Promise(()=>{})
 })
+export default axios

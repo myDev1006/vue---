@@ -1,7 +1,7 @@
 <template>
  <div>
    <router-view></router-view>
-  <Footernav/>
+  <Footernav v-show="$route.meta.showfooter"/>
  </div>
   
 </template>
@@ -11,6 +11,9 @@
   export default {
     components:{
       Footernav
+    },
+    mounted(){
+      this.$store.dispatch("getAddress")//分发地址action
     }
   }
 </script>
